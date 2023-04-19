@@ -25,6 +25,6 @@ io.on('connection', socket => {
   })
 })
 
-  console.log("Api Running on Sites")
+ app.get('/', (req, res) => { return res.send( ` ⛩️ - 🔣 - Api Running on Sites`)})
 
 server.listen(PORT, () => console.log('Server running...'))
